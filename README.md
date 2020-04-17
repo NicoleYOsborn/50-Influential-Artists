@@ -25,10 +25,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing uses a program with it's on syntax which allows you to store your CSS in separate files, use nesting, and variables and mixins (reusable CSS code) to make your CSS file easier to read nd more managable.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is variables, which allows you to make changes throughout the site in one place. Mixins gave me a bit of trouble, but I think once I get the hang of them they will be very handy.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable holds data which can be reassigned. The variable "mainColor" can be used throughout the site with the color set to "orange", and if you need to change all orange in the site to blue, you can do so by reassigning "mainColor" to "blue".
+
 4. What is the purpose of using functions in code?
+
+A function is a set of instructions which can be called whenever it is needed.
+
 5. What is a JSON data?
+
+JSON stands for JavaScript Object Notation. It is a structure for formatting data, and is used to transmit data between a server and web application.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -40,15 +54,15 @@ Follow these steps to set up your project:
 
 #### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add your Team Lead as collaborator on Github.
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ x] In your project's root folder, run the following command `less-watch-compiler less css index.less`
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
