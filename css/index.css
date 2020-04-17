@@ -87,7 +87,6 @@ video {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid grey;
 }
 body,
 html {
@@ -109,16 +108,16 @@ nav {
   justify-content: center;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 4%;
+}
+nav .current {
+  font-weight: bold;
 }
 nav a {
   text-decoration: none;
   color: black;
   padding: 0 1%;
-}
-nav a .current {
-  font-style: bold;
 }
 nav #aboutLink {
   border-left: 2px solid black;
@@ -142,7 +141,6 @@ nav #aboutLink {
   color: black;
   font-size: 1.3rem;
   border-radius: 8px;
-  border: none;
   box-shadow: 5px 10px 8px #888888;
 }
 .artists-container {
@@ -163,6 +161,9 @@ nav #aboutLink {
 .artists-container .artist img {
   width: 80%;
   border-radius: 8px;
+}
+.artists-container .artist img:hover {
+  opacity: 80%;
 }
 .artists-container .artist a {
   text-decoration: none;
