@@ -268,13 +268,13 @@ console.log(get20s(artists));
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
 function lotsOfArt(data) {
-  const prolificArtists=[];
-for (let i = 0; i < data.length; i++){
-  if(data[i].paintings > 100){
-    prolificArtists.push(data[i].name);
+  const prolificArtists = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].paintings > 100) {
+      prolificArtists.push(data[i].name);
+    }
   }
-}
-return prolificArtists;
+  return prolificArtists;
 }
 console.log(lotsOfArt(artists));
 
@@ -287,20 +287,44 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist( /* Code here */ ) {
-
-  /* Code here */
-
+function addArtist(newInfo) {
+  artists.push(newInfo);
 }
+
+addArtist({
+  id: 21,
+  name: "Nicole Osborn",
+  years: "1980 - 2020",
+  genre: "Web Design",
+  nationality: "American",
+  bio: "A prominent web designer, Nicole used her amazing UX skills to make websites enjoyable as well as aesthetically pleasing."
+});
+console.log(artists[artists.length - 1]);
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist( /* Code here */ ) {
+// function checkArtist(artist) {
+//   let artistExits = false;
+//   for (let i = 0; i < artists.length; i++) {
+//     if (artists[i].name === artist) {
+//       artistExists = true;
+//       return artistExists;
+//     }
+//   }
+//   return artistExits;
+// }   
 
-  /* Code here */
-
+function checkArtist(artist){
+  for (let i = 0; i < artists.length; i++){
+    if(artists[i].name === artist){
+      return artists[i];
+    }
+  }
+  return "Artist does not exist";
 }
+ 
+console.log(checkArtist("El Greco"));
 
 
 
