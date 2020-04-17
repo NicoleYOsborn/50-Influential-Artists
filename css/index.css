@@ -123,6 +123,21 @@ nav #aboutLink {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
+@media ((max-width: 500px)) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  nav #aboutLink {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+  }
+}
 .title-container {
   background-image: url(/assets/home.png);
   height: 500px;
@@ -143,6 +158,14 @@ nav #aboutLink {
   border-radius: 8px;
   box-shadow: 5px 10px 8px #888888;
 }
+@media ((max-width: 500px)) {
+  .title-container {
+    height: 200px;
+  }
+  .title-container h1 {
+    font-size: 1.5rem;
+  }
+}
 .artists-container {
   display: flex;
   flex-direction: row;
@@ -151,12 +174,26 @@ nav #aboutLink {
   padding: 2%;
   border-top: 2px solid grey;
 }
+@media ((max-width: 500px)) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .artists-container .artist {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30%;
+}
+@media ((max-width: 500px)) {
+  .artists-container .artist {
+    width: 80%;
+    margin-top: 2%;
+  }
 }
 .artists-container .artist img {
   width: 80%;
@@ -171,6 +208,11 @@ nav #aboutLink {
   font-size: 1.4rem;
   color: black;
   margin: 1% 0;
+}
+@media ((max-width: 500px)) {
+  .artists-container .artist a {
+    font-size: 1.2rem;
+  }
 }
 .artists-container .artist p {
   text-align: center;

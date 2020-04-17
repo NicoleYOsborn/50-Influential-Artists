@@ -7,39 +7,66 @@
     margin-bottom: 2%;
 
     .flex(column, center, center);
-    button{
+
+    button {
         .button(white, @textColor);
     }
+
+    @media(@phone) {
+        height: 200px;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        }
 }
 
 
-.artists-container {
-    .flex(row, space-around, flex-start);
+    .artists-container {
+        .flex(row, space-around, flex-start);
+
+        @media(@phone) {
+            .flex(column, center, center);
+        }
 
 
-    .artist {
-        .flex(column, center, center);
-        width: 30%;
+        .artist {
+            .flex(column, center, center);
+            width: 30%;
 
-        img {
-            width: 80%;
-            border-radius: 8px;
+            @media(@phone){
+                width: 80%;
+                margin-top: 2%;
+            }
 
+            img {
+                width: 80%;
+                border-radius: 8px;
+
+            }
+
+            img:hover {
+                opacity: 80%;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: @headerFont;
+                font-size: 1.4rem;
+                color: @textColor;
+                margin: 1% 0;
+
+                @media(@phone){
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
         }
-        img:hover{
-            opacity: 80%;
-        }
-        a{
-            text-decoration: none;
-            font-family: @headerFont;
-            font-size: 1.4rem;
-            color: @textColor;
-            margin: 1% 0;
-        }
-        p{
-            text-align: center;
-        }
+
+        padding: 2%;
+        border-top: 2px solid grey;
     }
-    padding: 2%;
-    border-top: 2px solid grey;
-}
