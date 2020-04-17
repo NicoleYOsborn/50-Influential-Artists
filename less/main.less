@@ -1,15 +1,41 @@
-
-.title-container{
+.title-container {
     background-image: url(/assets/home.png);
-    width: 90%;
-    height: auto;
-}
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    margin-bottom: 2%;
 
-
-.artist-container{
-.flex(row, space-around, flex-start);
-.artist{
     .flex(column, center, center);
-    width: 30%;
+    button{
+        .button(white);
+    }
 }
+
+
+.artists-container {
+    .flex(row, space-around, flex-start);
+
+
+    .artist {
+        .flex(column, center, center);
+        width: 30%;
+
+        img {
+            width: 80%;
+            border-radius: 8px;
+        }
+        a{
+            text-decoration: none;
+            font-family: @headerFont;
+            font-size: 1.4rem;
+            color: @textColor;
+            margin: 1% 0;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    padding: 2%;
+    border-top: 2px solid grey;
 }
